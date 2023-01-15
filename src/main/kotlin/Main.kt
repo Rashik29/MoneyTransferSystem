@@ -4,7 +4,7 @@ const val VISA = "Visa"
 const val MIR = "Мир"
 const val VKPAY = "VK Pay"
 val rubSymbol = '\u20BD'
-val amount = 760000
+val amount = 1000020
 val sumMoneyTranfersCoins = amount%100
 val sumMoneyTranfersRub = (amount - sumMoneyTranfersCoins )/100
 var transferSumCount = 0
@@ -12,14 +12,6 @@ var transferSumCount = 0
 fun main() {
     ifTypeCard("VK Pay", amount)
     transferSumCount()
-    ifTypeCard("Maestro", amount)
-    transferSumCount()
-    ifTypeCard("Mastercard", amount)
-    transferSumCount()
-    ifTypeCard("Visa", amount)
-    transferSumCount()
-    ifTypeCard("Мир", amount)
-    transferSumCount
 
 }
 fun ifTypeCard(
